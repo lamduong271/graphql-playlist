@@ -5,7 +5,7 @@ const app = express();
 const mongoose = require('mongoose')
 
 // connect mlab
-mongoose.connect('mongodb://lam:lam123@ds247101.mlab.com:47101/store-book');
+mongoose.connect('mongodb://admin:admin123@ds215563.mlab.com:15563/graph-ql',{useNewUrlParser: true});
 mongoose.connection.once('open', () => {
     console.log("connected to database")
 })
